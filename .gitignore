@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local configuration
+.env.example
+
+# Documents and generated files
+data/source/*
+!data/source/.gitkeep
+data/chroma/
+generated/*
+!generated/.gitkeep
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
