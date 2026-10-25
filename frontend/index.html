@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регламент — внутренний помощник</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">Р</div>
+                <div>
+                    <strong>Регламент</strong>
+                    <span>Внутренний помощник</span>
+                </div>
+            </div>
+
+            <button class="new-chat" id="new-chat">+ Новый диалог</button>
+
+            <div class="section-label">ВАШИ ДИАЛОГИ</div>
+            <div id="chat-list" class="chat-list"></div>
+
+            <div class="sidebar-footer">
+                <div class="avatar">К</div>
+                <div class="user-info">
+                    <strong id="user-name">Демонстрационный пользователь</strong>
+                    <span>Сотрудник</span>
+                </div>
+                <button id="logout" class="icon-button" title="Выйти">↗</button>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <div class="eyebrow">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+                    <h1>Помощник по регламентам</h1>
+                </div>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Деморежим
+                </div>
+            </header>
+
+            <section class="conversation" id="conversation">
+                <div class="welcome" id="welcome">
+                    <div class="welcome-icon">✳</div>
+                    <div class="eyebrow">ВАШ РАБОЧИЙ ПОМОЩНИК</div>
+                    <h2>Чем могу помочь?</h2>
+                    <p>Задайте вопрос по внутренним регламентам или выберите пример ниже.</p>
+
+                    <div class="suggestions">
+                        <button class="suggestion" data-prompt="Как проходит процесс согласования документа?">
+                            <span>↗</span>
+                            <strong>Согласование документов</strong>
+                            <small>Этапы и ответственные лица</small>
+                        </button>
+                        <button class="suggestion" data-prompt="Какие документы нужны для оформления заявки?">
+                            <span>▤</span>
+                            <strong>Список документов</strong>
+                            <small>Что необходимо подготовить</small>
+                        </button>
+                        <button class="suggestion" data-prompt="Где найти подходящий шаблон документа?">
+                            <span>⌕</span>
+                            <strong>Поиск шаблона</strong>
+                            <small>Подходящий образец документа</small>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="messages" id="messages"></div>
+            </section>
+
+            <footer class="composer-wrap">
+                <form class="composer" id="chat-form">
+                    <textarea id="message-input" rows="1"
+                        placeholder="Напишите вопрос по регламенту..."
+                        aria-label="Ваш вопрос"></textarea>
+                    <button type="submit" id="send-button" aria-label="Отправить">↑</button>
+                </form>
+                <p class="disclaimer">Демонстрационный режим. Ответы пока не основаны на реальных регламентах.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
